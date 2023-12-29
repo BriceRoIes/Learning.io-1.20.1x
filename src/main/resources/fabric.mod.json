@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "learning-io",
+	"version": "${version}",
+	"name": "learning-io",
+	"description": "Brice's First (FROM SCRATCH) Mod",
+	"authors": [
+		"BriceRoles"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/learning-io/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.briceroles.learningio.LearningIO"
+		],
+		"client": [
+			"net.briceroles.learningio.LearningIOClient"
+		],
+		"fabric-datagen": [
+			"net.briceroles.learningio.LearningIODataGenerator"
+		]
+	},
+	"mixins": [
+		"learning-io.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
